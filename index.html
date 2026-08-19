@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Tecnologica</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Orbitron:wght@500;800&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Academia Tecnologica</h1>
+    
+    <button class="hamburger-btn" id="menuBtn" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+   
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="us.html">About Us</a>
+        <a href="contacto.html">Contact</a>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+    <section class="hero">
+        <h2>Bienvenido a Academia Tecnologica</h2>
+        <p>Tu puerta de entrada a la educación tecnológica de vanguardia.</p>
+        <a href="courses.html" class="btn">Explorar Cursos</a>
+    </section>
+
+    <hr>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Instructores Expertos</h3>
+            <p>Aprende de profesionales de la industria con años de experiencia.</p>
+        </div>
+        <div class="feature">
+            <h3>Learning Práctico</h3>
+            <p>Participa en proyectos prácticos y aplicaciones del mundo real.</p>
+        </div>
+        <div class="feature">
+            <h3>Horario Flexible</h3>
+            <p>Accede a los cursos en cualquier momento, en cualquier lugar, a tu propio ritmo.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="testimonials">
+        <h2>Lo que Dicen Nuestros Estudiantes</h2>
+        <div class="testimonial">
+            <p>"Academia Tecnologica transformo mi carrera. Los cursos son de primera calidad." - Jane D.</p>
+            <img src="img/jane.jpg" alt="Testimonial 1">
+        </div>
+        <div class="testimonial">
+            <p>"Los instructores son conocedores y solidarios. ¡Muy recomendable!" - John S.</p>
+            <img src="img/john.jpg" alt="Testimonial 2">
+        </div>
+    </section>
+
+    <section class="empezar">
+        <h2>¿Listo para Iniciar tu Viaje?</h2>
+        <a href="contacto.html" class="btn">Ponte en Contacto</a>
+    </section>
+
+    <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+
+    menuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Academia Tecnologica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Academia Tecnologica</h1>
+    
+    <!-- Botón del menú hamburguesa -->
+    <button class="hamburger-btn" id="menuBtn" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="us.html">About Us</a>
+        <a href="contacto.html">Contact</a>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+    <section class="courses">
+        <h2>Nuestros Cursos</h2>
+        <div class="course">
+            <h3>Desarrollo Web</h3>
+            <p>Aprende a construir aplicaciones web modernas usando HTML, CSS y JavaScript.</p>
+            <a href="contacto.html" class="btn">Aprender Más</a>
+        </div>
+        <div class="course">
+            <h3>Ciencia de Datos</h3>
+            <p>Domina el análisis de datos, la visualización y las técnicas de aprendizaje automático.</p>
+            <a href="contacto.html" class="btn">Aprender Más</a>
+        </div>
+        <div class="course">
+            <h3>Ciberseguridad</h3>
+            <p>Entiende los principios de ciberseguridad y cómo proteger los activos digitales.</p>
+            <a href="contacto.html" class="btn">Aprender Más</a>
+        </div>
+    </section>
+
+    <section class="inscription">
+        <h2>Enroll Now</h2>
+        <p>Join our community of learners and start your journey in technology today!</p>
+        <a href="contacto.html" class="btn">Contact Us to Enroll</a>
+    </section>
+
+    <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+
+    menuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+    
+</body>
+</html>
