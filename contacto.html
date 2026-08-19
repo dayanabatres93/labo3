@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Academia Tecnologica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Academia Tecnologica</h1>
+    
+    <!-- Botón del menú hamburguesa -->
+    <button class="hamburger-btn" id="menuBtn" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="us.html">About Us</a>
+        <a href="contacto.html">Contact</a>
+    </nav>
+</header>
+    <main>
+        <section class="contact-info">
+            <h2>Contacto</h2>
+            <p>¿Tienes preguntas? ¡Estamos aquí para ayudarte!</p>
+            <address>
+                <p>Correo Electrónico: info@academiatecnologica.com</p>
+                <p>Teléfono: +502 4588-2946</p>
+                <p>Dirección: 123 Calle Tecnológica, Ciudad, País</p>
+            </address>
+        </section>
+
+        <section class="contacto-form">
+            <h2>Envíanos un Mensaje</h2>
+            <form action="https://formspree.io/f/xkjwpnwo" 
+            method="post">
+             <input type="hidden" name="_next" value= "contacto.html">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Enviar Mensaje</button>
+               
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Academia Tecnologica. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+
+    menuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+
+    </body>
+</html>
