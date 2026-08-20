@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Tecnologica - Sobre Nosotros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <h1>Academia Tecnologica</h1>
+    
+    
+    <button class="hamburger-btn" id="menuBtn" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="us.html">About Us</a>
+        <a href="contacto.html">Contact</a>
+    </nav>
+</header>
+
+    <hr>
+
+    <img src="img/n1.jpg" alt="Imagen de Aprendizaje" class="hero-image">
+
+
+    <main>
+        <section class="about-us">
+            <h2>Sobre Nosotros</h2>
+            <p>En Academia Tecnologica, nos dedicamos a proporcionar educación tecnológica de alta calidad. Nuestro objetivo es empoderar a los estudiantes con las habilidades necesarias para sobresalir en la industria tecnológica en constante evolución.</p>
+            <p>Nuestro equipo de instructores expertos está comprometido a ofrecer una experiencia de aprendizaje práctica y atractiva. Creemos en la importancia de combinar teoría con aplicaciones del mundo real para preparar a nuestros estudiantes para el éxito.</p>
+            <p>Únete a nosotros y forma parte de una comunidad de aprendizaje que valora la innovación, la creatividad y el crecimiento profesional.</p>
+        </section>
+    </main> 
+
+    <div class="image-container">
+        <img src="img/n2.jpg" alt="Imagen de Aprendizaje" >
+        <img src="img/n3.jpg" alt="Imagen de Aprendizaje">
+    </div>
+
+    <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+
+    menuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
